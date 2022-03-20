@@ -1,0 +1,198 @@
+$body-color      :#7D6167;
+$body-font-color : #ffff;
+$links-color     :$body-font-color;
+
+$body-font:'Rufina',
+serif;
+$body-font-size: 18px;
+$text-font-size: 22px;
+
+* {
+    box-sizing: border-box;
+    color     : $body-font-color;
+    margin    : 0px;
+    padding   : 0px;
+}
+
+body {
+    width : 100%;
+    height: 100vh;
+    margin: auto;
+}
+
+header {
+    width           : 100%;
+    height          : 130px;
+    background-color: $body-color;
+
+    nav {
+        display        : flex;
+        justify-content: space-around;
+        align-items    : center;
+        padding-top    : 40px;
+
+        .logo {
+            font-size  : 40px;
+            font-weight: bold;
+            color      : #EFD9CE;
+        }
+
+        span {
+            color    : #EFD9CE;
+            float    : right;
+            font-size: 20px;
+            position : relative;
+            top      : -8px;
+        }
+
+        .menu-bar {
+
+            i {
+                display  : none;
+                cursor   : pointer;
+                font-size: 22px;
+                color    : $body-font-color;
+            }
+
+        }
+
+        ul {
+            display: flex;
+            
+        }
+
+        #click {
+
+            display: none;
+        }
+
+        li {
+            list-style-type: none;
+            margin-left    : 80px;
+        }
+
+        a {
+            font-family    : $body-font;
+            font-size      : $body-font-size;
+            text-decoration: none;
+            text-transform : capitalize;
+            cursor         : pointer;
+
+            &:hover {
+                color: #FFA5AB;
+            }
+        }
+
+        form {
+
+            width          : 20%;
+            height         : 30%;
+            border-radius  : 40px;
+            padding        : 10px;
+            text-align     : center;
+            float          : right;
+            display        : flex;
+            justify-content: space-between;
+
+            &:hover {
+                background-color: #EFD9CE;
+
+            }
+
+            &:hover input {
+                width: 100%;
+                
+            }
+
+
+            button {
+                background   : none;
+                padding      : 10px;
+                border-radius: 10px;
+                border       : none;
+                height       : 40px;
+                cursor       : pointer;
+                float        : right;
+                font-size    : 18px;
+
+                i{
+                    &:hover {
+                        color: #FFA5AB;
+    
+                    }
+                }
+            }
+
+            input {
+
+                background: none;
+                border    : none;
+                width     : 0;
+                float     : left;
+                outline   : none;
+                cursor    : pointer;
+                transition: 1.5s;
+                font-size : 18px;
+                color     : #111111;
+
+                &::placeholder {
+                    color    : #7D6167;
+                    font-size: 16px;
+
+
+                }
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        justify-content: space-between;
+        margin-top     : 10px;
+
+        .logo {
+            font-size  : 30px;
+            margin-left: 20px;
+        }
+
+        .menu-bar {
+
+            i {
+                display     : block;
+                margin-right: 30px;
+            }
+        }
+
+        ul {
+            height          : 100vh;
+            width           : 100%;
+            position        : fixed;
+            top             : 80px;
+            left            : -100%;
+            display         : block;
+            background-color: #fac05e;
+            text-align      : center;
+            transition      : all 0.5s ease;
+
+            li {
+                margin: 40px 0px;
+
+                a {
+                    font-size: 20px;
+
+                    &:hover {
+                        color: #93e1d8;
+                    }
+
+                }
+            }
+        }
+
+        #click:checked~ul {
+            left: 0%;
+        }
+    }
+}
