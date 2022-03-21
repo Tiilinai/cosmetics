@@ -1,0 +1,282 @@
+$main-color      :#7D6167;
+$secondary-color : #EFD9CE;
+$body-font-color : #ffff;
+$hover-color     :#FFA5AB;
+$links-color     :$body-font-color;
+
+$body-font:'Rufina',
+serif;
+$body-font-size: 18px;
+$text-font-size: 22px;
+
+* {
+    box-sizing: border-box;
+    color     : $body-font-color;
+    margin    : 0px;
+    padding   : 0px;
+}
+
+body {
+    width : 100%;
+    height: 100vh;
+    margin: auto;
+}
+
+header {
+    width           : 100%;
+    height          : 130px;
+    background-color: $main-color;
+
+    nav {
+        display        : flex;
+        justify-content: space-around;
+        align-items    : center;
+        padding-top    : 40px;
+
+        .logo {
+            font-size  : 35px;
+            font-weight: bold;
+            color      : $secondary-color;
+        }
+
+        span {
+            color    : $secondary-color;
+            float    : right;
+            font-size: 16px;
+            position : relative;
+            top      : -8px;
+        }
+
+        .menu-bar {
+
+            i {
+                display  : none;
+                cursor   : pointer;
+                font-size: 22px;
+                color    : $body-font-color;
+            }
+
+        }
+
+        ul {
+            display: flex;
+
+        }
+
+        #click {
+
+            display: none;
+        }
+
+        li {
+            list-style-type: none;
+            margin-left    : 80px;
+        }
+
+        a {
+            font-family    : $body-font;
+            font-size      : $body-font-size;
+            text-decoration: none;
+            text-transform : capitalize;
+            cursor         : pointer;
+
+            &:hover {
+                color: $hover-color;
+            }
+        }
+
+        form {
+
+            width          : 20%;
+            height         : 30%;
+            border-radius  : 40px;
+            padding        : 10px;
+            text-align     : center;
+            float          : right;
+            display        : flex;
+            justify-content: space-between;
+
+            &:hover {
+                background-color: $secondary-color;
+
+            }
+
+            &:hover input {
+                width: 100%;
+
+            }
+
+
+            button {
+                background   : none;
+                padding      : 10px;
+                border-radius: 10px;
+                border       : none;
+                height       : 40px;
+                cursor       : pointer;
+                float        : right;
+                font-size    : $body-font-size;
+
+                i {
+                    &:hover {
+                        color: $hover-color;
+
+                    }
+                }
+            }
+
+            input {
+
+                background: none;
+                border    : none;
+                width     : 0;
+                float     : left;
+                outline   : none;
+                cursor    : pointer;
+                transition: 1.5s;
+                font-size : $body-font-size;
+                color     : #111111;
+
+                &::placeholder {
+                    color    : $main-color;
+                    font-size: 16px;
+
+
+                }
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        justify-content: space-between;
+
+
+        .logo {
+            font-size  : 20px;
+            margin-left: 20px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+
+        .menu-bar {
+
+            i {
+                display     : block;
+                margin-right: 30px;
+            }
+        }
+
+        ul {
+            height          : 100vh;
+            width           : 100%;
+            position        : fixed;
+            top             : 80px;
+            left            : -100%;
+            display         : block;
+            background-color: #fac05e;
+            text-align      : center;
+            transition      : all 0.5s ease;
+
+            li {
+                margin: 40px 0px;
+
+                a {
+                    font-size: 20px;
+
+                    &:hover {
+                        color: #93e1d8;
+                    }
+
+                }
+            }
+        }
+
+        #click:checked~ul {
+            left: 0%;
+        }
+    }
+
+    form {
+        display: none;
+
+        button {
+            display: none;
+        }
+    }
+}
+.sect-one{
+    width: 100%;
+    height: 61px;
+    background-color: $hover-color;
+    margin-top: 30px;
+        p{
+            font-size: 30px;
+            font-weight: 24px;
+            text-align: center;
+            padding-top: 12px;
+        }
+
+}
+
+
+
+
+
+
+
+
+footer {
+
+    position        : absolute;
+    bottom          : 0;
+    width           : 100%;
+    height          : 180px;
+    background-color: $main-color;
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-around;
+    align-items     : center;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            color: $hover-color;
+        }
+
+    }
+
+    .contactus {
+        display           : grid;
+        grid-template-rows: 60%;
+        gap               : 1em;
+
+    }
+
+    .products {
+        display           : grid;
+        grid-template-rows: 40%;
+        gap               : 1em;
+
+    }
+
+    i {
+        margin-right: 30px;
+        font-size   : 20px;
+        color: $secondary-color;
+
+        &:hover {
+            color : $hover-color;
+            cursor: pointer;
+        }
+
+    }
+}
+
+  
