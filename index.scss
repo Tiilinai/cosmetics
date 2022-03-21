@@ -1,5 +1,7 @@
-$body-color      :#7D6167;
+$main-color      :#7D6167;
+$secondary-color : #EFD9CE;
 $body-font-color : #ffff;
+$hover-color     :#FFA5AB;
 $links-color     :$body-font-color;
 
 $body-font:'Rufina',
@@ -23,7 +25,7 @@ body {
 header {
     width           : 100%;
     height          : 130px;
-    background-color: $body-color;
+    background-color: $main-color;
 
     nav {
         display        : flex;
@@ -32,15 +34,15 @@ header {
         padding-top    : 40px;
 
         .logo {
-            font-size  : 40px;
+            font-size  : 35px;
             font-weight: bold;
-            color      : #EFD9CE;
+            color      : $secondary-color;
         }
 
         span {
-            color    : #EFD9CE;
+            color    : $secondary-color;
             float    : right;
-            font-size: 20px;
+            font-size: 16px;
             position : relative;
             top      : -8px;
         }
@@ -58,7 +60,7 @@ header {
 
         ul {
             display: flex;
-            
+
         }
 
         #click {
@@ -79,7 +81,7 @@ header {
             cursor         : pointer;
 
             &:hover {
-                color: #FFA5AB;
+                color: $hover-color;
             }
         }
 
@@ -95,13 +97,13 @@ header {
             justify-content: space-between;
 
             &:hover {
-                background-color: #EFD9CE;
+                background-color: $secondary-color;
 
             }
 
             &:hover input {
                 width: 100%;
-                
+
             }
 
 
@@ -113,12 +115,12 @@ header {
                 height       : 40px;
                 cursor       : pointer;
                 float        : right;
-                font-size    : 18px;
+                font-size    : $body-font-size;
 
-                i{
+                i {
                     &:hover {
-                        color: #FFA5AB;
-    
+                        color: $hover-color;
+
                     }
                 }
             }
@@ -132,11 +134,11 @@ header {
                 outline   : none;
                 cursor    : pointer;
                 transition: 1.5s;
-                font-size : 18px;
+                font-size : $body-font-size;
                 color     : #111111;
 
                 &::placeholder {
-                    color    : #7D6167;
+                    color    : $main-color;
                     font-size: 16px;
 
 
@@ -151,11 +153,15 @@ header {
 @media screen and (max-width: 800px) {
     nav {
         justify-content: space-between;
-        margin-top     : 10px;
+
 
         .logo {
-            font-size  : 30px;
+            font-size  : 20px;
             margin-left: 20px;
+        }
+
+        span {
+            font-size: 14px;
         }
 
         .menu-bar {
@@ -195,4 +201,82 @@ header {
             left: 0%;
         }
     }
+
+    form {
+        display: none;
+
+        button {
+            display: none;
+        }
+    }
 }
+.sect-one{
+    width: 100%;
+    height: 61px;
+    background-color: $hover-color;
+    margin-top: 30px;
+        p{
+            font-size: 30px;
+            font-weight: 24px;
+            text-align: center;
+            padding-top: 12px;
+        }
+
+}
+
+
+
+
+
+
+
+
+footer {
+
+    position        : absolute;
+    bottom          : 0;
+    width           : 100%;
+    height          : 180px;
+    background-color: $main-color;
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-around;
+    align-items     : center;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            color: $hover-color;
+        }
+
+    }
+
+    .contactus {
+        display           : grid;
+        grid-template-rows: 60%;
+        gap               : 1em;
+
+    }
+
+    .products {
+        display           : grid;
+        grid-template-rows: 40%;
+        gap               : 1em;
+
+    }
+
+    i {
+        margin-right: 30px;
+        font-size   : 20px;
+        color: $secondary-color;
+
+        &:hover {
+            color : $hover-color;
+            cursor: pointer;
+        }
+
+    }
+}
+
+  
