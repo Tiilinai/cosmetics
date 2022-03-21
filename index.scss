@@ -11,7 +11,7 @@ $text-font-size: 22px;
 
 * {
     box-sizing: border-box;
-    color     : RED;
+    color     : $body-font-color;
     margin    : 0px;
     padding   : 0px;
 }
