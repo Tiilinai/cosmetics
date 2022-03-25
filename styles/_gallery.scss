@@ -1,6 +1,4 @@
-body {
-    margin: auto;
-}
+@import 'vars';
 
 .images-gallery {
     max-width: 1006px;
@@ -14,4 +12,21 @@ body {
 
 .image-gallery {
     padding: 10px;
+}
+
+.gallery-image-text {
+    display: flex;
+    justify-content: center;
+}
+
+.image-text{
+    font-family: 'Rufina', serif;
+    color: #7D6167;
+}
+
+.image-gallery-big {
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
 }
