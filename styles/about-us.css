@@ -254,9 +254,6 @@ div.our-team {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 h1 {
@@ -271,8 +268,6 @@ h1 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 8;
   grid-column: 3 / 11;
-  border-color: #7D6167;
-  border-style: ridge;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,9 +284,18 @@ h1 {
 }
 
 div.staff-member {
-  width: 20%;
-  height: 80%;
+  width: 15%;
+  height: 90%;
   border-color: #7D6167;
   border-style: ridge;
+  overflow: hidden;
+}
+
+img.staff-pic {
+  width: 100%;
+}
+
+.staff-pic:hover {
+  opacity: 0.6;
 }
 /*# sourceMappingURL=about-us.css.map */
