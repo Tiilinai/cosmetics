@@ -30,17 +30,6 @@ header nav span {
   top: -8px;
 }
 
-header nav .menu-bar i {
-  display: none;
-  cursor: pointer;
-  font-size: 22px;
-  color: #ffffff;
-}
-
-header nav .menu-bar #click {
-  display: none;
-}
-
 header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,6 +128,110 @@ header nav form input::placeholder {
   font-size: 16px;
 }
 
+header nav #click {
+  display: none;
+}
+
+header nav .menu-bar i {
+  display: none;
+  cursor: pointer;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 830px) {
+  header {
+    height: 100px;
+    width: 100%;
+  }
+  header nav {
+    top: 0px;
+  }
+  header nav .logo {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  header nav span {
+    font-size: 12px;
+    top: -6px;
+  }
+  header nav form {
+    display: none;
+  }
+  header nav .menu-bar i {
+    display: block;
+    margin-right: 30px;
+  }
+  header nav ul {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 95px;
+    left: -100%;
+    display: block;
+    background-color: #FFA5AB;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  header nav ul li {
+    margin: 60px 0px;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  header nav ul li a:hover {
+    color: #7D6167;
+    cursor: pointer;
+  }
+  header nav ul li .active-link {
+    color: #7D6167;
+  }
+  header nav #click:checked ~ ul {
+    left: 0%;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  header nav form {
+    display: none;
+  }
+  header nav .menu-bar i {
+    display: block;
+    margin-right: 30px;
+  }
+  header nav ul {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 95px;
+    left: -100%;
+    display: block;
+    background-color: #FFA5AB;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  header nav ul li {
+    margin: 60px 0px;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  header nav ul li a:hover {
+    color: #7D6167;
+    cursor: pointer;
+  }
+  header nav ul li .active-link {
+    color: #7D6167;
+  }
+  header nav #click:checked ~ ul {
+    left: 0%;
+    z-index: 1;
+  }
+}
+
 footer {
   position: relative;
   bottom: 0;
@@ -191,6 +284,37 @@ footer i {
 
 footer i:hover {
   color: #FFA5AB;
+}
+
+@media screen and (max-width: 830px) {
+  footer {
+    height: 90px;
+    margin-top: 5px;
+  }
+  footer .products,
+  footer .contactus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2px;
+  }
+  footer i {
+    margin-right: 15px;
+    font-size: 10px;
+  }
+  footer div p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  footer {
+    margin-top: 10px;
+  }
 }
 
 * {
