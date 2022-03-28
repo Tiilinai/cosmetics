@@ -132,11 +132,11 @@ header {
 
 @media screen and (max-width: 830px) {
     header {
-        height          : 100px;
-        width           : 100%;
+        height: 100px;
+        width : 100%;
 
         nav {
-            top     : 0px;
+            top: 0px;
 
             .logo {
                 font-size  : 18px;
@@ -163,33 +163,93 @@ header {
                 height          : 100vh;
                 width           : 100%;
                 position        : fixed;
-                top             : 80px;
-                left            : 100%;
+                top             : 95px;
+                left            : -100%;
                 display         : block;
-                background-color: #fac05e;
+                background-color: $hover-color;
                 text-align      : center;
                 transition      : all 0.5s ease;
 
                 li {
-                    margin: 40px 0px;
+                    margin: 60px 0px;
 
                     a {
                         font-size: 20px;
 
                         &:hover {
-                            color: #93e1d8;
+                            color : $main-color;
+                            cursor: pointer;
                         }
+
+                    }
+
+                    .active-link {
+                        color: $main-color;
 
                     }
                 }
             }
 
-            #click:checked ~ ul {
-                left: 0%;
+            #click:checked~ul {
+                left   : 0%;
+                z-index: 1;
             }
-
         }
-
     }
 }
 
+@media screen and (max-width: 1280px) {
+    header {
+
+        nav {
+
+
+            form {
+                display: none;
+            }
+
+            .menu-bar {
+                i {
+                    display     : block;
+                    margin-right: 30px;
+                }
+            }
+
+            ul {
+                height          : 100vh;
+                width           : 100%;
+                position        : fixed;
+                top             : 95px;
+                left            : -100%;
+                display         : block;
+                background-color: $hover-color;
+                text-align      : center;
+                transition      : all 0.5s ease;
+
+                li {
+                    margin: 60px 0px;
+
+                    a {
+                        font-size: 20px;
+
+                        &:hover {
+                            color : $main-color;
+                            cursor: pointer;
+                        }
+
+                    }
+
+                    .active-link {
+                        color: $main-color;
+
+                    }
+                }
+            }
+
+            #click:checked~ul {
+                left   : 0%;
+                z-index: 1;
+            }
+        }
+    }
+}
