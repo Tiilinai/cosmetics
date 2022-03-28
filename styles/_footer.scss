@@ -1,4 +1,3 @@
-
 @import 'vars';
 
 footer {
@@ -18,8 +17,8 @@ footer {
 
         &:hover {
             color: $hover-color;
-        }
 
+        }
     }
 
     .contactus {
@@ -42,8 +41,8 @@ footer {
         color       : $secondary-color;
 
         &:hover {
-            color : $hover-color;
-            cursor: pointer;
+            color: $hover-color;
+
         }
 
     }
