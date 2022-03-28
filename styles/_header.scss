@@ -25,22 +25,6 @@ header {
             top      : -8px;
         }
 
-        .menu-bar {
-
-            i {
-                display  : none;
-                cursor   : pointer;
-                font-size: 22px;
-                color    : $body-font-color;
-            }
-
-            #click {
-
-                display: none;
-            }
-
-        }
-
         ul {
             display: flex;
 
@@ -129,5 +113,83 @@ header {
 
 
         }
+
+        #click {
+            display: none;
+        }
+
+        .menu-bar {
+            i {
+                display  : none;
+                cursor   : pointer;
+                font-size: 22px;
+                color    : $body-font-color;
+            }
+        }
     }
 }
+
+
+@media screen and (max-width: 830px) {
+    header {
+        height          : 100px;
+        width           : 100%;
+
+        nav {
+            top     : 0px;
+
+            .logo {
+                font-size  : 18px;
+                margin-left: 20px;
+            }
+
+            span {
+                font-size: 12px;
+                top      : -6px;
+            }
+
+            form {
+                display: none;
+            }
+
+            .menu-bar {
+                i {
+                    display     : block;
+                    margin-right: 30px;
+                }
+            }
+
+            ul {
+                height          : 100vh;
+                width           : 100%;
+                position        : fixed;
+                top             : 80px;
+                left            : 100%;
+                display         : block;
+                background-color: #fac05e;
+                text-align      : center;
+                transition      : all 0.5s ease;
+
+                li {
+                    margin: 40px 0px;
+
+                    a {
+                        font-size: 20px;
+
+                        &:hover {
+                            color: #93e1d8;
+                        }
+
+                    }
+                }
+            }
+
+            #click:checked ~ ul {
+                left: 0%;
+            }
+
+        }
+
+    }
+}
+

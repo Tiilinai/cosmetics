@@ -47,3 +47,31 @@ footer {
 
     }
 }
+
+@media screen and (max-width: 830px) {
+    footer {
+
+        height: 40px;
+        position: sticky;
+
+        .products,
+        .contactus {
+            display       : flex;
+            flex-direction: column;
+            gap           : 2px;
+        }
+
+        i {
+            margin-right: 15px;
+            font-size   : 10px;
+        }
+
+        div {
+
+            p {
+                font-size: 5px;
+            }
+        }
+    }
+
+}
