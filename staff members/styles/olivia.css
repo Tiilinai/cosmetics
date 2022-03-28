@@ -1,0 +1,285 @@
+header {
+  width: 100%;
+  height: 130px;
+  background-color: #7D6167;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+}
+
+header nav .logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: #EFD9CE;
+}
+
+header nav span {
+  color: #EFD9CE;
+  float: right;
+  font-size: 16px;
+  position: relative;
+  top: -8px;
+}
+
+header nav .menu-bar i {
+  display: none;
+  cursor: pointer;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+header nav .menu-bar #click {
+  display: none;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li {
+  list-style-type: none;
+  margin-left: 80px;
+}
+
+header nav ul li a {
+  font-family: "Rufina", serif;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+header nav ul li a:hover {
+  color: #FFA5AB;
+}
+
+header nav ul li .active-link {
+  color: #FFA5AB;
+}
+
+header nav form {
+  width: 20%;
+  height: 30%;
+  border-radius: 40px;
+  padding: 10px;
+  text-align: center;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav form:hover {
+  background-color: #EFD9CE;
+}
+
+header nav form:hover input {
+  width: 100%;
+}
+
+header nav form button {
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  float: right;
+  font-size: 18px;
+}
+
+header nav form button i:hover {
+  color: #FFA5AB;
+}
+
+header nav form input {
+  background: none;
+  border: none;
+  width: 0;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  font-size: 18px;
+  color: #111111;
+}
+
+header nav form input::-webkit-input-placeholder {
+  color: #7D6167;
+  font-size: 16px;
+}
+
+header nav form input:-ms-input-placeholder {
+  color: #7D6167;
+  font-size: 16px;
+}
+
+header nav form input::-ms-input-placeholder {
+  color: #7D6167;
+  font-size: 16px;
+}
+
+header nav form input::placeholder {
+  color: #7D6167;
+  font-size: 16px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 180px;
+  background-color: #7D6167;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #FFA5AB;
+}
+
+footer .contactus {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 60%;
+      grid-template-rows: 60%;
+  gap: 1em;
+}
+
+footer .products {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 40%;
+      grid-template-rows: 40%;
+  gap: 1em;
+}
+
+footer i {
+  margin-right: 30px;
+  font-size: 24px;
+  color: #EFD9CE;
+}
+
+footer i:hover {
+  color: #FFA5AB;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #ffffff;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+}
+
+.sect-one {
+  width: 100%;
+  height: 61px;
+  background-color: #EFD9CE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sect-one p {
+  font-size: 30px;
+  color: #7D6167;
+  font-weight: 24px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.animate__animated {
+  width: 50%;
+}
+
+.sect-two {
+  width: 100%;
+  height: 60vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+}
+
+div.our-team {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 6;
+  grid-column: 4 / 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1 {
+  color: #7D6167;
+  font-size: 40px;
+}
+
+.staff {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 7;
+  grid-row: 3 / 10;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 8;
+  grid-column: 3 / 11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=olivia.css.map */
