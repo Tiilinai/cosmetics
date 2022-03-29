@@ -1,0 +1,99 @@
+@import 'header';
+@import 'footer';
+@import 'vars';
+
+* {
+    box-sizing: border-box;
+    color     : $body-font-color;
+    margin    : 0px;
+    padding   : 0px;
+}
+
+body {
+    width : 100%;
+    margin: auto;
+}
+
+.sect-one {
+    width           : 100%;
+    height          : 61px;
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: center;
+
+    p {
+        font-size  : 30px;
+        color      : $main-color;
+        font-weight: 24px;
+        text-align : center;
+        padding-top: 12px;
+    }
+
+}
+
+.animate__animated {
+    width: 50%;
+}
+
+.sect-two {
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+}
+
+div.our-team {
+    grid-row: 1 / 3;
+    grid-column: 4 / 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.staff {
+    grid-row: 2 / 12;
+    grid-column: 3 / 11;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.pic {
+    width: 20%;
+    height: 120%;
+    border-color: $main-color;
+    border-style:solid;
+    overflow: hidden;
+}
+
+.info {
+    width: 40%;
+    height: 70%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+}
+h2 {
+    color: $main-color;
+    font-size: 30px;
+}
+p {
+    color: $main-color;
+    font-size: 20px;
+}
+
+img.nadia {
+    width: 100%;
+}
+
+img.olivia {
+    width: 100%;
+}
+
