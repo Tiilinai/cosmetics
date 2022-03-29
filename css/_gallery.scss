@@ -3,12 +3,11 @@
 .images-gallery {
     margin: auto;
     max-width: 1006px;
-    max-height: 484px;
-    padding: 10px;
     display: flex;
     justify-content: space-evenly;
     align-content: space-between;
     flex-wrap: wrap;
+    
 }
 
 .image-gallery {
@@ -16,7 +15,6 @@
     opacity: 1;
     display: block;
     width: 100%;
-    height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
 }
