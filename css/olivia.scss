@@ -1,6 +1,6 @@
-@import '../../styles/header';
-@import '../../styles/footer';
-@import '../../styles/vars';
+@import 'header';
+@import 'footer';
+@import 'vars';
 
 * {
     box-sizing: border-box;
@@ -58,26 +58,28 @@ h1 {
 }
 
 .staff {
-    grid-row: 3 / 10;
+    grid-row: 3 / 12;
     grid-column: 3 / 11;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+
 }
 
-div.staff-member {
-    width: 15%;
+.pic {
+    width: 20%;
     height: 90%;
     border-color: $main-color;
     border-style:solid;
     overflow: hidden;
 }
 
-img.staff-pic {
+.info {
+    width: 30%;
+    height: 90%;
+    overflow: hidden;
+}
+
+img.olivia {
     width: 100%;
 }
 
-.staff-pic:hover {
-    opacity: 0.6;
-}
