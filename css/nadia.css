@@ -417,7 +417,59 @@ h1 {
   overflow: hidden;
 }
 
-img.olivia {
+img.nadia {
   width: 100%;
 }
-/*# sourceMappingURL=olivia.css.map */
+
+@media screen and (max-width: 830px) {
+  .sect-one {
+    height: 40px;
+  }
+  .sect-one p {
+    font-size: 18px;
+    padding-top: 8px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .sect-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-height: 700px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5px;
+  }
+  .sect-two .img-1 {
+    width: 100%;
+  }
+  .sect-two .img-2 {
+    display: none;
+  }
+  .sect-two h2 {
+    font-size: 22px;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+  .sect-two p {
+    width: 99%;
+    font-size: 16px;
+    padding-top: 10px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .sect-two p {
+    line-height: 30px;
+  }
+}
+/*# sourceMappingURL=nadia.css.map */

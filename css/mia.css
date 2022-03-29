@@ -401,6 +401,10 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .pic {
@@ -412,12 +416,16 @@ h1 {
 }
 
 .info {
-  width: 30%;
+  width: 20%;
   height: 90%;
   overflow: hidden;
+  border-style: solid;
+  border-color: #7D6167;
 }
 
-img.olivia {
+img.mia {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-/*# sourceMappingURL=olivia.css.map */
+/*# sourceMappingURL=mia.css.map */
