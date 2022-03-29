@@ -58,28 +58,43 @@ h1 {
 }
 
 .staff {
-    grid-row: 3 / 12;
+    grid-row: 2 / 12;
     grid-column: 3 / 11;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
 
 }
 
 .pic {
     width: 20%;
-    height: 90%;
+    height: 120%;
     border-color: $main-color;
     border-style:solid;
     overflow: hidden;
 }
 
 .info {
-    width: 20%;
-    height: 90%;
+    width: 40%;
+    height: 70%;
     overflow: hidden;
-    border-style: solid;
-    border-color: $main-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+}
+h2 {
+    color: $main-color;
+    font-size: 30px;
+}
+p {
+    color: $main-color;
+    font-size: 20px;
+}
+
+img.nadia {
+    width: 100%;
 }
 
 img.mia {
