@@ -389,7 +389,7 @@ body {
 
 div.staff-member {
   width: 15%;
-  height: 40%;
+  height: 50%;
   border-color: #7D6167;
 }
 
@@ -469,6 +469,7 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: -50px;
   }
   .sect-two h1 {
     font-size: 60px;
