@@ -356,7 +356,7 @@ body {
 
 .sect-two {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -367,11 +367,11 @@ body {
 
 div.our-team {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1 / 3;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 6;
-  grid-column: 4 / 10;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 8;
+  grid-column: 3 / 11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,6 +381,17 @@ div.our-team {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.link-back {
+  color: #7D6167;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+svg {
+  width: 8px;
+  color: #7D6167;
 }
 
 .staff {
@@ -440,11 +451,7 @@ p {
   font-size: 20px;
 }
 
-img.nadia {
-  width: 100%;
-}
-
-img.olivia {
+img.team-pic {
   width: 100%;
 }
 /*# sourceMappingURL=team.css.map */
