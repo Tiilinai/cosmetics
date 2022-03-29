@@ -1,6 +1,6 @@
-@import '../../../styles/header';
-@import '../../../styles/footer';
-@import '../../../styles/vars';
+@import 'header';
+@import 'footer';
+@import 'vars';
 
 * {
     box-sizing: border-box;
@@ -79,7 +79,63 @@ h1 {
     overflow: hidden;
 }
 
-img.olivia {
+img.nadia {
     width: 100%;
 }
 
+@media screen and (max-width: 830px) {
+    .sect-one {
+        height: 40px;
+
+        p {
+            font-size  : 18px;
+            padding-top: 8px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 830px) {
+    .sect-two {
+        display        : flex;
+        flex-wrap      : wrap;
+        max-height     : 700px;
+        justify-content: center;
+        align-items    : center;
+        margin-top     : 5px;
+
+
+        .img-1 {
+            width: 100%;
+        }
+
+        .img-2 {
+            display: none;
+        }
+
+        h2 {
+            font-size   : 22px;
+            width       : 100%;
+            padding-top : 10px;
+            padding-left: 20px;
+        }
+
+        p {
+            width      : 99%;
+            font-size  : 16px;
+            padding-top: 10px;
+            line-height: 20px;
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .sect-two {
+
+        p {
+            line-height: 30px;
+        }
+    }
+}
