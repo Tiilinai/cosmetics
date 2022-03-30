@@ -359,6 +359,7 @@ body {
   height: 70vh;
   display: -ms-grid;
   display: grid;
+  overflow: scroll;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
   -ms-grid-rows: (1fr)[12];
@@ -383,7 +384,7 @@ div.our-team {
           align-items: center;
 }
 
-.link-back {
+.back {
   color: #7D6167;
   text-decoration: none;
   font-size: 23px;
@@ -417,13 +418,11 @@ svg {
   width: 20%;
   height: 120%;
   border-color: #7D6167;
-  overflow: hidden;
 }
 
 .info {
   width: 40%;
   height: 70%;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -445,7 +444,7 @@ h2 {
   font-size: 30px;
 }
 
-p {
+.p1 {
   color: #7D6167;
   font-size: 15px;
 }
@@ -483,6 +482,7 @@ img.team-pic {
   }
   .sect-two img {
     min-width: 200%;
+    margin-left: -50px;
   }
   .sect-two div.staff {
     width: 300%;
